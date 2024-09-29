@@ -230,33 +230,27 @@ button:active {
     max-width: 100vw;
 }
 
-
+#highlights:after,
 #highlights:before {
-    top: 1px;
-    transform: translateY(-100%);
-    background: url(assets/wave.svg);
+    background: url('assets/wave.svg');
     content: "";
     position: absolute;
     width: 101vw;
-    height: 12vw;
+    height: 12vh;
     left: 0;
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#highlight:after {
-    bottom: 1px;
+#highlights:before {
+    transform: translateY(-100%);
+    top: 1px;
+}
+
+#highlights:after {
     transform: translateY(100%) rotate(180deg);
-    background: url(assets/wave.svg);
-    content: "";
-    position: absolute;
-    width: 101vw;
-    height: 12vw;
-    left: 0;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
+    bottom: 1px;
 }
 
 .highlight__wrapper {
